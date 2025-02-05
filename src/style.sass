@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Handlee")
+
+$family-primary: Handlee 
+$red: #CC00CC
+
+
+body
+  overflow: hidden
+
+.nav
+  position: fixed !important
+  top: 0
+  left: 0
+  right: 0
+
+#nav-logo
+  width: 120px
+
+#portada
+  background: url('./images/backgrounds/colinas.svg')
+  background-size: cover
+  background-color: rgba(121, 203, 233, 0.6)
+
+// Presentación
+#see
+  height: 48%
+
+#presentacion
+  background-image: url("./images/ed03.jpg")
+  background-size: cover
+  background-attachment: fixed
+
+#pergamino-texto
+  position: absolute
+  z-index: 0
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+// Enfoque
+#enfoque
+  background-image: url("./images/backgrounds/manos.svg")
+  background-size: contain
+  background-repeat: no-repeat
+
+// Actividades
+.slider-item
+  width: 100%
+  background-size: cover
+  z-index: 10
+
+.bx-wrapper
+  border: 0 !important
+  margin-bottom: 0 !important;
+
+// Nuestro Equipo
+#equipo
+  background-image: url("./images/ed06.jpg")
+  background-size: cover
+  background-attachment: scroll
+
+#volantin
+  position: absolute
+  width: 140px
+  right: -20%
+  top: -20%
+
+// Itinerancia
+#itinerancia
+  background-image: url("./images/ed15.jpg")
+  background-size: cover
+  background-attachment: fixed
+
+#paragua
+  position: absolute
+  width: 140px
+  left: -10%
+  top: -20%
+
+// Quitar borde de los destinos de los anchor links
+#portada, #pergamino, #enfoque, #actividades, #equipo, #itinerancia
+  outline: none
+
+// Clases útiles para alinear
+.right
+  text-align: right
+
+.bottom
+  vertical-align: bottom !important
+  margin-top: auto
+  
+@import "node_modules/bulma/bulma.sass"
